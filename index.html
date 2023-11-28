@@ -66,10 +66,27 @@
   height: 700px;  
   }
   
+  
   #section0 {
     background-color: #cadbe7;
     margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
   }
+    .section-content {
+      flex: 1;
+    }
+    .story-image {
+      width: 50%
+    }
+    .story-image img {
+      width: 330px; 
+      height: auto;
+    }
+    
+    
   #section1 {
     background-color: #423711;
     margin-top: 6px;
@@ -116,7 +133,15 @@
 
 
 <div id="section0">
+  <div class="section-content">
+  <!-- content for section 0 goes here -->
+  </div>
+  <div class="story-image">
+    <img src="story picture.jpg" alt="image of Keyrane(me)">
+  </div>
 </div>
+  
+  
 <div id="section1">
 Your amazing content goes here!
 </div>
