@@ -6,16 +6,61 @@
     <meta charset="UTF-8">
     <title>Personal Anime Appreciation site</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
 
-
-<style>
+  <style>
   h2 {
   color: black;
+  margin: 0;
   }
+    #header h2 {
+      font-family: Nova square;
+      font-size: 24px;
+      color: #d16644; 
+      text-align: center;
+    }
   
   body {
   color: white; 
   }
+  
+/* Add space between menu links */
+  nav {
+    margin-bottom: 20px; 
+    text-align: center;
+    padding-top: 20px;
+
+  }
+  
+  /*Style for menu link */
+  
+  nav a {
+  
+    margin-left: 5px; 
+    text-decoration: none; 
+    color: #878f84;
+    transition: color 0.3;
+  }
+  
+  /*chnage color on hover */ 
+  nav a:hover {
+    color: #cf9683;
+  }
+ 
+  
+  #banner {
+  background-position: center;
+  display: flex; 
+  background-size: cover;
+  align-items: center; 
+  justify-content: center;
+}
+  #banner img {
+    width: 700px;
+    height: auto;
+    max-width: 100%;
+  }
+  
   #section0, #section1, #section2, #section3, #section4 {
   height: 700px;  
   }
@@ -36,47 +81,30 @@
     background-color: #787254;
   }
   
-  /* Add space between menu links */
-  nav {
-    margin-bottom: 20px; 
-  }
-  
-  /*Style for menu link */
-  
-  nav a {
-  
-    margin-right: 5px; 
-    text-decoration: none; 
-    color: #878f84;
-    transition: color 0.3;
-  }
-  
-  /*chnage color on hover */ 
-  nav a:hover {
-    color: #cf9683;
-  }
   
   
 </style>
 </head>
 <body>
-  
-<!--Banner with image --> 
-<div id="banner">
-<img src="filename.jpg" alt="description of image">
-  
-  </div>
-  <!--Navigation links -->
-<nav>
+<!-- header title -->
+<div id="header">
+    <h2>Anime Appreciation Site</h2>
+		<!--Navigation links -->
+  <nav>
 <a href="#section1">Story</a>
 <a href="#section1">Favorite anime</a>
 <a href="#section1">Loved characters</a>
 <a href="#section1">Hated characters</a>
 <a href="#section1">Quotes</a>  
-</nav>
+	</nav>
+</div>
+
+  <!--Banner with image --> 
+<div id="banner">
+<img src="banner.jpeg" alt="anime banner">
+  </div>
   
-<h2>
-PERSONAL ANIME APPRECIATION SITE</h2>
+
 
 <div id="section0">
 </div>
