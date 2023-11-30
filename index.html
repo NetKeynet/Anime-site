@@ -270,6 +270,28 @@
         margin: 0 auto;
         /* Center align the image */
       }
+
+      #section4 table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+
+      #section4 th,
+      #section4 td {
+        border: 2px solid #ddd;
+        padding: 0px;
+        text-align: center;
+      }
+
+      #section4 th {
+        background-color: #cf9683;
+        color: #fff;
+      }
+
+      #section4 td {
+        background-color: #878f84;
+      }
     </style>
   </head>
   <body>
@@ -295,7 +317,7 @@
 
     <div id="section0">
       <div class="section-content">
-        <!-- content for section 0 goes here -->
+
         <h2>My Story with Anime</h2>
         <p>Hi There, I'm Keyrane.</p>
         <p>In the previous series of my life, I didn’t used to be an anime girl.
@@ -369,6 +391,7 @@
       <h2>Characters I love</h2>
       <h5>Click on each image in the gallery to learn more about why I love them :)</h5>
 
+      <!-- first row of images -->
       <div class="row">
         <div class="column">
           <img src="slayer.jpeg" alt="Tengen Uzui from Demon Slayer" style="width:100%" onclick="showAnimeCharacter('<strong>Tengen Uzui from Demon slayer.</strong> <br> I personally refer to him as flashy guy hahah. He has a flamboyant personality and lives for entertainment. I love how confident and charismatic he is and unafraid to show off his skills and abilities. A true strong leader to the main character when they go on missions');">
@@ -454,7 +477,7 @@
         <div class="column">
           <img src="princess.jpeg" alt="Hated Character 2| Princess Malty Melromarc from The Rising of the Shield Hero" style="width:100%">
         </div>
-      </div> <!-- Move this line up -->
+      </div>
 
       <div class="row">
         <div class="column">
@@ -476,18 +499,51 @@
         <div class="column">
           <img src="gabi.jpeg" alt="Hated Character 4| Gabi Braun from Attack on Titan" style="width:100%">
         </div>
-      </div> <!-- Move this line up -->
-
+      </div>
     </div>
 
 
 
     <div id="section4">
       <h2>Author Note</h2>
-
       <img src="gojo.gif" alt="Animated GIF">
-      <p>Your amazing animated content description goes here!</p>
+
+      <!-- Anime table with 4 rows and 2 columns -->
+      <table style="margin-top: 20px; width: 100%;">
+        <tr>
+          <td style="width: 10%;"></td>
+          <td style="width: 90%;"></td>
+        </tr>
+        <tr>
+          <td style="text-align: right;">Rating:</td>
+          <td>Top Anime of the Month:</td>
+        </tr>
+
+        <tr>
+          <td style="text-align: right;">#1:</td>
+          <td>ONE PIECE</td>
+        </tr>
+        <tr>
+          <td style="text-align: right;">#2:</td>
+          <td>JUJUTSU KAISEN Season 2</td>
+        </tr>
+        <tr>
+          <td style="text-align: right;">#3:</td>
+          <td>THE EMINENCE IN SHADOW Season 2</td>
+        </tr>
+      </table>
+
+      <!-- author note and link -->
+      <p>I personally watch my anime for FREE on the following site :)
+        <a href="https://aniwave.to/home" target="_blank"> <br>https://aniwave.to/home</a>
+      </p>
+
+      <!-- Author email link -->
+      <p>For anime recommendations, you can reach me at my email:<br>
+        <a href="mailto:kokouame@uwaterloo.ca" target="_blank">kokouame@uwaterloo.ca</a>
+      </p>
     </div>
+
 
   </body>
 </html>
