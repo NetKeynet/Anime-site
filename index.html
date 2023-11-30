@@ -157,11 +157,8 @@
       #section2 {
         background-color: #878f84;
         margin-top: 6px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
         padding: 10px;
-        height: 1000px;
+        text-align: center;
       }
 
       #section2 h2 {
@@ -174,19 +171,40 @@
         width: 100%;
       }
 
-      .anime-character {
-        margin: 10px;
-        padding: 8px;
-        width: calc(25% - 20px);
-        box-sizing: border-box;
-        text-align: left;
+      .row {
+        display: flex;
+        justify-content: space-between;
+        /* Adjusted to space between items */
+        margin: 0 -10px;
+        /* Adjusted to create equal spacing */
+        flex-wrap: wrap;
       }
 
-      .anime-character img {
+      .column {
+        flex: 0 0 calc(25% - 20px);
+        margin: 10px;
+        text-align: center;
+      }
+
+      .column img {
         width: 100%;
         height: auto;
-        display: block;
-        margin-bottom: 10px;
+        max-width: 282px;
+        max-height: 282px;
+      }
+
+      .container {
+        position: relative;
+        display: none;
+      }
+
+      .container img {
+        width: 100%;
+        max-height: 100vh;
+      }
+
+      .container p {
+        margin: 10px 0;
       }
 
       #section3 {
@@ -295,28 +313,47 @@
 
     </div>
 
-    <div id="section2">
-      <h2>Characters I love</h2>
-      <div class="anime-character">
-        <img src="slayer.jpeg" alt="Tengen Uzui from demon slayer">
-        <p><strong>Tengen Uzui from Demon slayer.</strong><br> I personally refer to him as flashy guy hahah. He has a flamboyant personality and live for entertainment. I love how confident and charismatic he is and unafraid to show off his skills and abilities.
-        </p>
-      </div>
-      
-      <div class="anime-character">
-        <img src="violet.jpeg" alt="Violet Evergarden from Violet Evergarden lol">
-        <p><strong>Violet Evergarden from Violet Evergarden lol.</strong> is such a lovely character. Since a young age, she was a mass-murdering soldier and later became one of the most famous Dolls In the amanuensis’s industry. Despite her expressionless and aloof personality, she is considerate and empathetic and always tries to help her clients no matter what. What I love most about her is her journey from being an “emotionless” tool to becoming more of an expressive person as she learns the meaning of the word “love”. 
-        </p>
-      </div>
-      
-      <div class="anime-character">
-        <img src="violet.jpeg" alt="Violet Evergarden from Violet Evergarden lol">
-        <p><strong>Sasha, aka Potato Girl from Attack on Titan,</strong> is a favorite character with a friendly demeanor and an insatiable appetite. She strikes a balance between being mean and kind, caring yet seemingly heartless when it comes to food. In times of terror, she brings normalcy with humor and a love for food, standing courageously in the face of danger for the sake of her friends and, of course, food. 
-        </p>
-      </div>
+  <div id="section2">
+  <h2>Characters I love</h2>
 
-
+  <div class="row">
+    <div class="column">
+      <img src="slayer.jpeg" alt="Tengen Uzui from Demon Slayer" style="width:100%" onclick="showAnimeCharacter('Tengen Uzui from Demon slayer. I personally refer to him as flashy guy hahah. He has a flamboyant personality and lives for entertainment. I love how confident and charismatic he is and unafraid to show off his skills and abilities. A true strong leader to the main character when they go on missions');">
     </div>
+
+    <div class="column">
+      <img src="violet.jpeg" alt="Violet Evergarden from Violet Evergarden" style="width:100%" onclick="showAnimeCharacter('Violet Evergarden from Violet Evergarden lol, is such a lovely character. Since a young age, she was a mass-murdering soldier and later became one of the most famous Dolls In the amanuensis’s industry. Despite her expressionless and aloof personality, she is considerate and empathetic and always tries to help her clients no matter what. What I love most about her is her journey from being an “emotionless” tool to becoming more of an expressive person as she learns the meaning of the word “love”.');">
+    </div>
+
+    <div class="column">
+      <img src="horimiya.jpeg" alt="horimiya from horimiya" style="width:100%" onclick="showAnimeCharacter('Horimiya from Horimiya lol, is such a relatable character to my personal experience at school when first arriving in Canada. This guy is an introvert who has been judged by his cover. By simply appearing different he was outcasted. I love how he portrayed his emotions of not only being true to himself but also portrayed how lonely he felt. But slowly with the help of his girlfriend, Hiromi learns how to connect with others. He helps me realize that friends and connections are important just being isolated can be nice and cozy, but it can also become lonely to an unbearable level.');">
+    </div>
+
+    <div class="column">
+      <img src="idol .jpeg" alt="Aquamarine Hoshino from Oshi No Ko" style="width:100%" onclick="showAnimeCharacter('5.	Aquamarine Hoshino from Oshi No Ko is literally THE reason I even started watching that anime after seeing a scene of him. He’s smart and his acting talent is so amazing. I love strong characters that such a unique personality. Throughout the anime, he investigates the death of his mother in such an intense way. Aqua believes that he is a fundamentally bad person and that he does not deserve to be happy. Because of that, he dirties his hands, doing bad and shitty things that hurt the people around him because, to him, it's better than letting these 'good' people who mistakenly have come to care for him dirty themselves in turn. ');">
+    </div>
+  </div>
+
+  <div class="container" id="animeCharacterContainer">
+    <span onclick="closeAnimeCharacter()" class="closebtn">&times;</span>
+    <img id="expandedAnimeCharacter" style="width:100%">
+    <div id="animeCharacterText"></div>
+  </div>
+</div>
+
+  <script>
+    function showAnimeCharacter(characterText) {
+      var expandAnimeCharacter = document.getElementById("expandedAnimeCharacter");
+      var animeCharacterText = document.getElementById("animeCharacterText");
+      animeCharacterText.innerHTML = characterText;
+      document.getElementById("animeCharacterContainer").style.display = "block";
+    }
+
+    function closeAnimeCharacter() {
+      document.getElementById("animeCharacterContainer").style.display = "none";
+    }
+  </script>
+</div>
 
 
 
