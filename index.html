@@ -210,6 +210,7 @@
         margin: 10px 0;
       }
 
+
       #section3 {
         background-color: #8b2e25;
         margin-top: 6px;
@@ -316,67 +317,69 @@
 
     </div>
 
-  <div id="section2">
-  <h2>Characters I love</h2>
-  <h5>Click on each image in the gallery :)</h5>
+    <div id="section2">
+      <h2>Characters I love</h2>
+      <h5>Click on each image in the gallery :)</h5>
 
-  <div class="row">
-    <div class="column">
-      <img src="slayer.jpeg" alt="Tengen Uzui from Demon Slayer" style="width:100%" onclick="showAnimeCharacter('<strong>Tengen Uzui from Demon slayer.</strong> <br> I personally refer to him as flashy guy hahah. He has a flamboyant personality and lives for entertainment. I love how confident and charismatic he is and unafraid to show off his skills and abilities. A true strong leader to the main character when they go on missions');">
+      <div class="row">
+        <div class="column">
+          <img src="slayer.jpeg" alt="Tengen Uzui from Demon Slayer" style="width:100%" onclick="showAnimeCharacter('<strong>Tengen Uzui from Demon slayer.</strong> <br> I personally refer to him as flashy guy hahah. He has a flamboyant personality and lives for entertainment. I love how confident and charismatic he is and unafraid to show off his skills and abilities. A true strong leader to the main character when they go on missions');">
+        </div>
+
+        <div class="column">
+          <img src="violet.jpeg" alt="Violet Evergarden from Violet Evergarden" style="width:100%" onclick="showAnimeCharacter('<strong>Violet Evergarden from Violet Evergarden lol</strong>,<br> is such a lovely character. Since a young age, she was a mass-murdering soldier and later became one of the most famous Dolls In the amanuensis’s industry. <br> Despite her expressionless and aloof personality, she is considerate and empathetic and always tries to help her clients no matter what. <br> What I love most about her is her journey from being an “emotionless” tool to becoming more of an expressive person as she learns the meaning of the word “love”.');">
+        </div>
+
+        <div class="column">
+          <img src="horimiya.jpeg" alt="horimiya from horimiya" style="width:100%" onclick="showAnimeCharacter('<strong>Horimiya from Horimiya lol</strong>,<br> is such a relatable character to my personal experience at school when first arriving in Canada.<br> This guy is an introvert who has been judged by his cover. By simply appearing different he was outcasted. I love how he portrayed his emotions of not only being true to himself but also portrayed how lonely he felt. But slowly with the help of his girlfriend, Hiromi learns how to connect with others. He helps me realize that friends and connections are important just being isolated can be nice and cozy, but it can also become lonely to an unbearable level.');">
+        </div>
+
+        <div class="column">
+          <img src="idol .jpeg" alt="Aquamarine Hoshino from Oshi No Ko" style="width:100%" onclick="showAnimeCharacter('<strong>Aquamarine Hoshino from Oshi No Ko </strong><br> is literally THE reason I even started watching that anime after seeing a scene of him. He’s smart and his acting talent is so amazing. <br> I love strong characters that have such a unique personality. Throughout the anime, he investigates the death of his mother in such an intense way. Aqua believes that he is a fundamentally bad person and that he does not deserve to be happy. Because of that, he dirties his hands, doing bad and shitty things that hurt the people around him because, to him, it\'s better than letting these \'good\' people who mistakenly have come to care for him dirty themselves in turn.');">
+        </div>
+
+        <!-- Second row of images -->
+        <div class="column">
+          <img src="chineses anime .jpeg" alt="Qian Yun Xi from Psychic princess (Tong Ling Fei). " style="width:100%" onclick="showAnimeCharacter('<strong>Qian Yun Xi from Psychic princess (Tong Ling Fei).</strong><br>This anime is the only Chinese anime I know, and Qian Yun Xi is my favorite. She is very kind, strong willed and extremely funny. She come off as being an extremely innocent girl, but she is very energetic, smart, and strong. The whole show is simply hilarious to watch because of her.');">
+        </div>
+
+        <div class="column">
+          <img src="SashaBlouse.jpg" alt="Sasha from Attack on Titan " style="width:100%" onclick="showAnimeCharacter('<strong>Sasha also known as Potato girl from Attack on Titan</strong> <br> is one of my favorites from that anime. She is friendly and has an incredible appetite. she’s mean yet kind, caring yet heartless especially when it comes to food. All in all, a true friend. In time of terror and death, she brings normalcy to the group with either her humor or love for food. Though passionate in what she believes in, she’s scared just like anyone but as a soldier, she always stand in the face of danger for FOOD and her friends. ');">
+        </div>
+
+        <div class="column">
+          <img src="mikey .jpeg" alt="Mikey from Tokyo revengers" style="width:100%" onclick="showAnimeCharacter('<strong>Mikey from Tokyo revengers</strong><br> is simply blessed with unparallel charisma.  I love him because he fears no one, respect and admire himself lol. <br> He possesses immense superior strength compared to other delinquent fighters throughout the series. I also like him because he is a complicated character where people often debate whether he is good or bad.<br> This makes the show interesting to watch.');">
+        </div>
+
+        <div class="column">
+          <img src="lazyguy.jpeg" alt="Oreki Houtarou from classic literature club." style="width:100%" onclick="showAnimeCharacter('<strong>Oreki Houtarou from classic literature club.</strong> <br> This character is humble and incredibly smart however he doesn’t brag about his ability, I like that. I find it interesting the way he solves mystery and the way he simply lives his life without really following the typically high school norms of the world he lives in.');">
+        </div>
+      </div>
+
+
+
+      <div class="container" id="animeCharacterContainer">
+        <span onclick="closeAnimeCharacter()" class="closebtn">&times;</span>
+        <img id="expandedAnimeCharacter" style="width:100%">
+        <div id="animeCharacterText"></div>
+      </div>
+
+
+
+
+      <script>
+        function showAnimeCharacter(characterText) {
+          var expandAnimeCharacter = document.getElementById("expandedAnimeCharacter");
+          var animeCharacterText = document.getElementById("animeCharacterText");
+          animeCharacterText.innerHTML = characterText;
+          document.getElementById("animeCharacterContainer").style.display = "block";
+        }
+
+        function closeAnimeCharacter() {
+          document.getElementById("animeCharacterContainer").style.display = "none";
+        }
+      </script>
     </div>
-
-    <div class="column">
-      <img src="violet.jpeg" alt="Violet Evergarden from Violet Evergarden" style="width:100%" onclick="showAnimeCharacter('<strong>Violet Evergarden from Violet Evergarden lol</strong>,<br> is such a lovely character. Since a young age, she was a mass-murdering soldier and later became one of the most famous Dolls In the amanuensis’s industry. <br> Despite her expressionless and aloof personality, she is considerate and empathetic and always tries to help her clients no matter what. <br> What I love most about her is her journey from being an “emotionless” tool to becoming more of an expressive person as she learns the meaning of the word “love”.');">
-    </div>
-
-    <div class="column">
-      <img src="horimiya.jpeg" alt="horimiya from horimiya" style="width:100%" onclick="showAnimeCharacter('<strong>Horimiya from Horimiya lol</strong>,<br> is such a relatable character to my personal experience at school when first arriving in Canada.<br> This guy is an introvert who has been judged by his cover. By simply appearing different he was outcasted. I love how he portrayed his emotions of not only being true to himself but also portrayed how lonely he felt. But slowly with the help of his girlfriend, Hiromi learns how to connect with others. He helps me realize that friends and connections are important just being isolated can be nice and cozy, but it can also become lonely to an unbearable level.');">
-    </div>
-
-  <div class="column">
-  <img src="idol .jpeg" alt="Aquamarine Hoshino from Oshi No Ko" style="width:100%" onclick="showAnimeCharacter('<strong>Aquamarine Hoshino from Oshi No Ko </strong><br> is literally THE reason I even started watching that anime after seeing a scene of him. He’s smart and his acting talent is so amazing. <br> I love strong characters that have such a unique personality. Throughout the anime, he investigates the death of his mother in such an intense way. Aqua believes that he is a fundamentally bad person and that he does not deserve to be happy. Because of that, he dirties his hands, doing bad and shitty things that hurt the people around him because, to him, it\'s better than letting these \'good\' people who mistakenly have come to care for him dirty themselves in turn.');">
-</div>
-    
-     <!-- Second row of images -->
-    <div class="column">
-      <img src="chineses anime .jpeg" alt="Qian Yun Xi from Psychic princess (Tong Ling Fei). " style="width:100%" onclick="showAnimeCharacter('<strong>Qian Yun Xi from Psychic princess (Tong Ling Fei).</strong><br>This anime is the only Chinese anime I know, and Qian Yun Xi is my favorite. She is very kind, strong willed and extremely funny. She come off as being an extremely innocent girl, but she is very energetic, smart, and strong. The whole show is simply hilarious to watch because of her.');">
-    </div>
-
-    <div class="column">
-      <img src="SashaBlouse.jpg" alt="Sasha from Attack on Titan " style="width:100%" onclick="showAnimeCharacter('<strong>Sasha also known as Potato girl from Attack on Titan</strong> <br> is one of my favorites from that anime. She is friendly and has an incredible appetite. she’s mean yet kind, caring yet heartless especially when it comes to food. All in all, a true friend. In time of terror and death, she brings normalcy to the group with either her humor or love for food. Though passionate in what she believes in, she’s scared just like anyone but as a soldier, she always stand in the face of danger for FOOD and her friends. ');">
-    </div>
-
-    <div class="column">
-      <img src="mikey .jpeg" alt="Mikey from Tokyo revengers" style="width:100%" onclick="showAnimeCharacter('<strong>Mikey from Tokyo revengers</strong><br> is simply blessed with unparallel charisma.  I love him because he fears no one, respect and admire himself lol. <br> He possesses immense superior strength compared to other delinquent fighters throughout the series. I also like him because he is a complicated character where people often debate whether he is good or bad.<br> This makes the show interesting to watch.');">
-    </div>
-
-    <div class="column">
-      <img src="lazyguy.jpeg" alt="Oreki Houtarou from classic literature club." style="width:100%" onclick="showAnimeCharacter('<strong>Oreki Houtarou from classic literature club.</strong> <br> This character is humble and incredibly smart however he doesn’t brag about his ability, I like that. I find it interesting the way he solves mystery and the way he simply lives his life without really following the typically high school norms of the world he lives in.');">
-    </div>
-  </div>
-
-
-
-  <div class="container" id="animeCharacterContainer">
-    <span onclick="closeAnimeCharacter()" class="closebtn">&times;</span>
-    <img id="expandedAnimeCharacter" style="width:100%">
-    <div id="animeCharacterText"></div>
-  </div>
-</div>
-
-  <script>
-    function showAnimeCharacter(characterText) {
-      var expandAnimeCharacter = document.getElementById("expandedAnimeCharacter");
-      var animeCharacterText = document.getElementById("animeCharacterText");
-      animeCharacterText.innerHTML = characterText;
-      document.getElementById("animeCharacterContainer").style.display = "block";
-    }
-
-    function closeAnimeCharacter() {
-      document.getElementById("animeCharacterContainer").style.display = "none";
-    }
-  </script>
-</div>
 
 
 
